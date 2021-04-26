@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1566</width>
+    <height>867</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Jigsaw Puzzles</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1566</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="action_new"/>
+    <addaction name="action_open"/>
+    <addaction name="separator"/>
+    <addaction name="action_save"/>
+    <addaction name="action_export"/>
+    <addaction name="action_export_img"/>
+    <addaction name="action_export_puzzle"/>
+    <addaction name="separator"/>
+    <addaction name="action_close"/>
+    <addaction name="action_exit"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>编辑</string>
+    </property>
+    <addaction name="action_add"/>
+    <addaction name="action_del_bg"/>
+    <addaction name="action_opacity"/>
+    <addaction name="action_line_color"/>
+    <addaction name="separator"/>
+    <addaction name="action_reset_puzzle"/>
+    <addaction name="action_separator"/>
+    <addaction name="action_find_brush"/>
+    <addaction name="action_del_brush"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="action_help"/>
+    <addaction name="action_about"/>
+   </widget>
+   <widget class="QMenu" name="menuWindow">
+    <property name="title">
+     <string>窗口</string>
+    </property>
+    <addaction name="action_fullscreen"/>
+    <addaction name="action_reset_scale"/>
+    <addaction name="separator"/>
+    <addaction name="action_puzzle_window"/>
+    <addaction name="action_add_group"/>
+    <addaction name="action_add_board"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>脚本</string>
+    </property>
+    <addaction name="action_combine"/>
+    <addaction name="action_separate"/>
+    <addaction name="action_shuffle"/>
+    <addaction name="separator"/>
+    <addaction name="action_gaps"/>
+    <addaction name="action_compare"/>
+    <addaction name="action_edge"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menu"/>
+   <addaction name="menuWindow"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <action name="actionNew">
+   <property name="text">
+    <string>New Project</string>
+   </property>
+  </action>
+  <action name="action_new">
+   <property name="text">
+    <string>新增</string>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::WidgetShortcut</enum>
+   </property>
+  </action>
+  <action name="action_open">
+   <property name="text">
+    <string>打开</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="action_save">
+   <property name="text">
+    <string>保存</string>
+   </property>
+  </action>
+  <action name="action_export">
+   <property name="text">
+    <string>导出项目</string>
+   </property>
+  </action>
+  <action name="action_export_img">
+   <property name="text">
+    <string>导出拼接好的图片</string>
+   </property>
+  </action>
+  <action name="action_export_script">
+   <property name="text">
+    <string>导出拼图脚本</string>
+   </property>
+  </action>
+  <action name="actionsolve">
+   <property name="text">
+    <string>Use auto solver</string>
+   </property>
+  </action>
+  <action name="actionseparate">
+   <property name="text">
+    <string>Use auto separator</string>
+   </property>
+  </action>
+  <action name="action_add">
+   <property name="text">
+    <string>添加拼图原图(背景)</string>
+   </property>
+  </action>
+  <action name="action_del_bg">
+   <property name="text">
+    <string>删除背景图片</string>
+   </property>
+  </action>
+  <action name="action_opacity">
+   <property name="text">
+    <string>设置背景图片透明度</string>
+   </property>
+  </action>
+  <action name="action_help">
+   <property name="text">
+    <string>如何使用？</string>
+   </property>
+  </action>
+  <action name="action_about">
+   <property name="text">
+    <string>关于此软件</string>
+   </property>
+  </action>
+  <action name="action_fullscreen">
+   <property name="text">
+    <string>全屏</string>
+   </property>
+  </action>
+  <action name="action_reset_scale">
+   <property name="text">
+    <string>重置缩放比例</string>
+   </property>
+  </action>
+  <action name="action_line_color">
+   <property name="text">
+    <string>设置网格线颜色</string>
+   </property>
+  </action>
+  <action name="action_reset_puzzle">
+   <property name="text">
+    <string>重置拼图进度</string>
+   </property>
+  </action>
+  <action name="action_puzzle_window">
+   <property name="text">
+    <string>打开碎片图列表</string>
+   </property>
+  </action>
+  <action name="action_solver2">
+   <property name="text">
+    <string>自动拼接</string>
+   </property>
+  </action>
+  <action name="action_add_group">
+   <property name="text">
+    <string>新增拼图分组</string>
+   </property>
+  </action>
+  <action name="action_export_puzzle">
+   <property name="text">
+    <string>导出拼图</string>
+   </property>
+  </action>
+  <action name="action_close">
+   <property name="text">
+    <string>关闭当前项目</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>自动拼接(与原图比较像素点，较慢)</string>
+   </property>
+  </action>
+  <action name="action_add_board">
+   <property name="text">
+    <string>新增拼图窗口</string>
+   </property>
+  </action>
+  <action name="action_combine">
+   <property name="text">
+    <string>将多张碎片图拼接成一张</string>
+   </property>
+  </action>
+  <action name="action_separate">
+   <property name="text">
+    <string>将一张图分成多张碎片图</string>
+   </property>
+  </action>
+  <action name="action_shuffle">
+   <property name="text">
+    <string>将一张图片随机打乱生成一张图片</string>
+   </property>
+  </action>
+  <action name="action_gaps">
+   <property name="text">
+    <string>自动拼接(gaps)</string>
+   </property>
+  </action>
+  <action name="action_compare">
+   <property name="text">
+    <string>自动拼接(与原图比较像素点，较慢)</string>
+   </property>
+  </action>
+  <action name="action_exit">
+   <property name="text">
+    <string>退出软件</string>
+   </property>
+  </action>
+  <action name="action_separator">
+   <property name="text">
+    <string>自动分开相似图片</string>
+   </property>
+  </action>
+  <action name="action_find_brush">
+   <property name="text">
+    <string>自动分开含有画笔的图片</string>
+   </property>
+  </action>
+  <action name="action_edge">
+   <property name="text">
+    <string>自动拼接(比较边缘)</string>
+   </property>
+  </action>
+  <action name="action_del_brush">
+   <property name="text">
+    <string>删除全部除画笔颜色的颜色</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

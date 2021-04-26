@@ -1,0 +1,7 @@
+# python 3.7.8
+
+psutil
+PyQt5
+Pillow
+numpy==1.16.5
+opencv-python==4.2.0.34
