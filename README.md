@@ -4,7 +4,7 @@
 # 前言
 因为用PhotoShop等软件无法做到拼图自动对齐，软件最初的设计想法只是做一个工具能方便人工手拼拼图的工具。  
 
-# 入门
+# 如何使用？
 最好在Python3.7.8环境下安装，运行main.py即可  
 ```
 pip install -r requirements.txt
