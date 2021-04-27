@@ -4,6 +4,14 @@
 # 前言
 因为用PhotoShop等软件无法做到拼图自动对齐，软件最初的设计想法只是做一个工具能方便人工手拼拼图的工具。  
 
+# 入门
+最好在Python3.7.8环境下安装，运行main.py即可  
+```
+pip install -r requirements.txt
+python main.py
+```
+或前往[Release](https://github.com/JamesHoi/PuzzleSolver/releases)下载exe
+
 # 功能
 使用教程详见[wiki](https://github.com/JamesHoi/PuzzleSolver/wiki)  
 ## 基础功能
@@ -40,3 +48,4 @@
 - [ ] 自动拼图后缩放比例碎片图会消失
 - [ ] 关闭软件弹出提示，点击No或关闭提示窗口还是会关闭，且不会杀死进程
 - [ ] 自动拼图时关闭进度窗口并没有杀死进程
+- [ ] gaps自动拼图输入参数generations为1时报错
